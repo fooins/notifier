@@ -1,5 +1,5 @@
 const { Op } = require('sequelize');
-const { error500 } = require('../../libraries/utils');
+const { error500 } = require('./libraries/utils');
 const {
   getNotifyTaskModel,
   getSecretModel,

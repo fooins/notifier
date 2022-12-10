@@ -1,3 +1,5 @@
+/* eslint-disable no-continue */
+/* eslint-disable no-await-in-loop */
 const config = require('config');
 const uuid = require('uuid');
 const CryptoJS = require('crypto-js');
