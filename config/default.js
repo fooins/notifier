@@ -30,4 +30,13 @@ module.exports = {
     // 数据库索引
     db: 0,
   },
+  // 队列信息
+  queue: {
+    // 队列名
+    key: 'notification',
+    // 消费者组名
+    group: 'notification-group-1',
+    // 每次读取的条数
+    count: 10,
+  },
 };
