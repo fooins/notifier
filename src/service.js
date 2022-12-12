@@ -100,8 +100,8 @@ const queryTasks = async (taskIds) => {
       continue;
     }
 
-    if (task.status !== 'handing') {
-      logger.error(`任务不是 handing 状态（taskId=${taskId}）`);
+    if (!['handing', 'retry'].includes(task.status)) {
+      logger.error(`任务不是 handing 或 retry 状态（taskId=${taskId}）`);
       continue;
     }
 
